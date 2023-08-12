@@ -1,4 +1,4 @@
-<!-- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -11,5 +11,4 @@
     <h1>Faça login!</h1>
 
 </body>
-</html> -->
-<h1>Faça login!</h1>
+</html>
