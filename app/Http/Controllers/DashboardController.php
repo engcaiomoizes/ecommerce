@@ -41,8 +41,8 @@ class DashboardController extends Controller
     }
 
     public function index() {
-        // return view('admin.login');
-        return "OK";
+        return view('admin.login');
+        // return "OK";
     }
 
 }
