@@ -12,6 +12,10 @@
         {
             "src": "/build/(.*)",
             "dest": "/public/build/"
+        },
+        {
+            "src": "/resources/(.*)",
+            "dest": "/public/resources/"
         }
     ],
     "env": {
