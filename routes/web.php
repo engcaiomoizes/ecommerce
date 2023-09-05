@@ -20,3 +20,5 @@ Route::get('/', function () {
 
 Route::get('/dashboard', [DashboardController::class, 'dashboard'])->middleware('dashboard');
 Route::get('/dashboard/login', [DashboardController::class, 'index'])->middleware('dashboardAlreadyLoggedIn');
+Route::post('/dashboard/fazer-login', [DashboardController::class, 'login'])->name('dashboard-login');
+Route::get('/dashboard/logout', [DashboardController::class, 'logout'])->name('dashboard-logout');

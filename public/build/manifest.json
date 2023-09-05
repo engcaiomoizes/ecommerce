@@ -1,17 +1,33 @@
 {
-  "resources/css/app.css": {
-    "file": "assets/app-829fb0a8.css",
-    "isEntry": true,
-    "src": "resources/css/app.css"
+  "public/fonts/Nexa_Bold.otf": {
+    "file": "assets/Nexa_Bold-560e2a7c.otf",
+    "src": "public/fonts/Nexa_Bold.otf"
+  },
+  "public/fonts/Nexa_Light.otf": {
+    "file": "assets/Nexa_Light-3a52bad7.otf",
+    "src": "public/fonts/Nexa_Light.otf"
+  },
+  "public/fonts/OpenSans-Bold.ttf": {
+    "file": "assets/OpenSans-Bold-5894a364.ttf",
+    "src": "public/fonts/OpenSans-Bold.ttf"
+  },
+  "public/fonts/OpenSans-Regular.ttf": {
+    "file": "assets/OpenSans-Regular-e64e508b.ttf",
+    "src": "public/fonts/OpenSans-Regular.ttf"
   },
   "resources/js/app.js": {
-    "file": "assets/app-0d91dc04.js",
+    "file": "assets/app-833f4474.js",
     "isEntry": true,
     "src": "resources/js/app.js"
   },
-  "resources/scss/app.scss": {
-    "file": "assets/app-0198a505.css",
+  "resources/sass/app.scss": {
+    "file": "assets/app-ec94e51d.css",
     "isEntry": true,
-    "src": "resources/scss/app.scss"
+    "src": "resources/sass/app.scss"
+  },
+  "resources/sass/dashboard.scss": {
+    "file": "assets/dashboard-a128def6.css",
+    "isEntry": true,
+    "src": "resources/sass/dashboard.scss"
   }
 }

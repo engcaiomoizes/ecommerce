@@ -32,7 +32,7 @@ class DashboardController extends Controller
     public function logout() {
         if (Session::has('loginId')) {
             Session::pull('loginId');
-            return redirect('/dashboard');
+            return redirect('/dashboard/login');
         }
     }
 
@@ -42,7 +42,6 @@ class DashboardController extends Controller
 
     public function index() {
         return view('admin.login');
-        // return "OK";
     }
 
 }

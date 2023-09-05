@@ -1,2 +1,13 @@
-@vite(['resources/scss/app.scss'])
-<h1>Teste de texto</h1>
+@extends('layouts.main')
+
+@section('title', 'Cukamonga E-Commerce')
+
+@section('head')
+
+@endsection
+
+@section('content')
+<div class="container">
+    <h1>Testee</h1>
+</div>
+@endsection

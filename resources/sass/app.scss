@@ -1,0 +1,140 @@
+// Fonts
+@import url('https://fonts.bunny.net/css?family=Nunito');
+@import url('https://fonts.googleapis.com/css?family=Poppins&display=swap');
+
+@font-face {
+    font-family: 'Nexa Bold';
+    src: url('/public/fonts/Nexa_Bold.otf') format('opentype');
+}
+@font-face {
+    font-family: 'Nexa Light';
+    src: url('/public/fonts/Nexa_Light.otf') format('opentype');
+}
+@font-face {
+    font-family: 'Nexa';
+    src: url('/public/fonts/Nexa_Light.otf') format('opentype');
+}
+@font-face {
+    font-family: 'Nexa';
+    src: url('/public/fonts/Nexa_Bold.otf') format('opentype');
+    font-weight: bold;
+}
+@font-face {
+    font-family: 'Open Sans';
+    src: url('/public/fonts/OpenSans-Regular.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'Open Sans';
+    src: url('/public/fonts/OpenSans-Bold.ttf') format('truetype');
+    font-weight: bold;
+}
+
+// Variables
+@import 'variables';
+
+// // Bootstrap
+// @import 'bootstrap/scss/bootstrap';
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: Poppins, sans-serif !important;
+}
+
+a {
+    text-decoration: none;
+}
+
+header {
+    position: relative;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 3;
+    background-color: $header-color;
+    height: 100px;
+    display: flex;
+    flex-wrap: wrap;
+
+    menu {
+        margin: 0 auto;
+        // max-width: 800px;
+        width: 100%;
+        height: 30px;
+        position: absolute;
+        bottom: 0;
+        background: #008FEA;
+        box-shadow: 0 3px 15px rgba(0,0,0,.15);
+
+        &::after {
+            display: block;
+            content: '';
+            clear: both;
+        }
+
+        ul {
+            padding: 0;
+            margin: 0;
+            list-style: none;
+
+            li {
+                float: left;
+                position: relative;
+
+                a {
+                    display: block;
+                    color: rgba(255,255,255,.9);
+                    text-decoration: none;
+                    padding: 0 20px;
+                    line-height: 30px;
+                    // border-top: 2px solid transparent;
+                    // border-bottom: 2px solid transparent;
+                    transition: all .3s ease-in-out;
+                    text-transform: uppercase;
+                    font-weight: 700;
+                    font-size: 14px;
+
+                    &:hover, &:focus {
+                        background: rgba(0,0,0,.15);;
+                    }
+
+                    &:focus {
+                        color: white;
+                    }
+
+                    &:not(:only-child)::after {
+                        padding-left: 4px;
+                        content: ' ▾';
+                    }
+                }
+
+                ul {
+                    li {
+                        min-width: 190px;
+
+                        a {
+                            background: transparent;
+                            color: #555;
+                            border-bottom: 1px solid #DDE0E7;
+                            text-transform: none;
+                            font-weight: 400;
+
+                            &:hover, &:focus {
+                                background: #eee;
+                                color: #111;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .dropdown {
+            display: none;
+            position: absolute;
+            background: #fff;
+            box-shadow: 0 4px 10px rgba(10,20,30,.4);
+        }
+    }
+}
